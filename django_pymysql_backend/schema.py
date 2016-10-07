@@ -5,6 +5,7 @@ from __future__ import (
 
 from django.db.backends.base.schema import BaseDatabaseSchemaEditor
 from django.db.models import NOT_PROVIDED
+from pymysql.converters import escape_item
 
 
 class DatabaseSchemaEditor(BaseDatabaseSchemaEditor):
@@ -26,8 +27,6 @@ class DatabaseSchemaEditor(BaseDatabaseSchemaEditor):
     sql_delete_pk = "ALTER TABLE %(table)s DROP PRIMARY KEY"
 
     def quote_value(self, value):
-        # Inner import to allow module to fail to load gracefully
-        from pymysql.converters import escape_item
         return escape_item(value)
 
     def skip_default(self, field):
