@@ -5,6 +5,7 @@ modernize
 multilint
 PyMySQL
 pytest
+pytest-django
 Pygments
 pytz
 six
