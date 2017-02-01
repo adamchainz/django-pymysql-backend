@@ -42,7 +42,7 @@ setup(
     keywords='Django MariaDB MySQL',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
-        'Framework :: Django :: 1.10',
+        'Framework :: Django :: 1.11',
         'Framework :: Django',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
@@ -51,6 +51,6 @@ setup(
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
     ],
 )
