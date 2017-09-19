@@ -19,4 +19,4 @@ pygments==2.2.0
 pymysql==0.7.11
 pytest==3.2.2
 pytz==2017.2
-six==1.10.0
+six==1.11.0
